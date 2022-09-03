@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
 @import '~normalize.css';
 
-@import 'header.scss';
-@import 'formula.scss';
-@import 'table.scss';
-@import 'toolbar.scss';
+@import 'header';
+@import 'toolbar';
+@import 'formula';
+@import 'table';
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,4 +19,5 @@ body{
 
 .excel{
     position: relative;
+    color: #888;
 }
