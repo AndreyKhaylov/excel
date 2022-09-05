@@ -1,12 +1,12 @@
-@import '_variables';
-@import '_mixins';
+@import 'variables';
+@import 'mixins';
 
 .excel__header{
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: $header-heigth;
+    height: $header-height;
     display: flex;
     justify-content: space-between;
 

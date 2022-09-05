@@ -44,7 +44,6 @@ module.exports = {
     devtool: isDev ? 'source-map' : false,
     devServer: {
         port: 3000,
-        hot: isDev
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -72,13 +71,7 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/i,
                 use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            hmr: isDev,
-                            reloadAll: true
-                        }
-                    },
+                    MiniCssExtractPlugin.loader,
                     'css-loader',
                     'sass-loader'
                 ],
